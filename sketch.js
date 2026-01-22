@@ -58,7 +58,6 @@ let milk = false;
 let sprinkles = false;
 let sugar = false;
 
-
 //checking whether an item was made yet or not, deciding if you get the NEW background
 let cakepop = false;
 let cupcake = false;
@@ -192,24 +191,28 @@ function setup() {
   book = new Book(width / 2 - 600, height / 2 + 300, 400, 200, images["Book"]);
   recipe = new Recipe(width / 2, height / 2, 1500, 900, images["Recipe"]);
 
+  //grey icons
   lock.push(new LockCakepop(width / 2 - 520, height / 2 - 250, 200, 200, images["Lock"]));
   lock.push(new LockCupcake(width / 2 - 220, height / 2 - 250, 200, 200, images["Lock"]));
   lock.push(new LockDonut(width / 2 - 520, height / 2, 200, 200, images["Lock"]));
   lock.push(new LockMuffin(width / 2 - 220, height / 2, 200, 200, images["Lock"]));
   lock.push(new LockOreo(width / 2 - 370, height / 2 + 250, 200, 200, images["Lock"]));
 
+  //locked info
   locked.push(new LockedCakepop(width / 2 + 350, height / 2, 450, 700, images["LockedCakepop"]));
   locked.push(new LockedCupcake(width / 2 + 350, height / 2, 500, 700, images["LockedCupcake"]));
   locked.push(new LockedDonut(width / 2 + 350, height / 2, 500, 700, images["LockedDonut"]));
   locked.push(new LockedMuffin(width / 2 + 350, height / 2, 500, 700, images["LockedMuffin"]));
   locked.push(new LockedOreo(width / 2 + 350, height / 2, 500, 700, images["LockedOreo"]));
 
+  //small icons of unlocked goods
   unlock.push(new LockCakepop(width / 2 - 520, height / 2 - 250, 200, 200, images["Cakepop"]));
   unlock.push(new LockCupcake(width / 2 - 220, height / 2 - 250, 200, 200, images["Cupcake"]));
   unlock.push(new LockDonut(width / 2 - 520, height / 2, 200, 200, images["Donut"]));
   unlock.push(new LockMuffin(width / 2 - 220, height / 2, 200, 200, images["Muffin"]));
   unlock.push(new LockOreo(width / 2 - 370, height / 2 + 250, 200, 200, images["Oreo"]));
 
+  //unlocked info
   unlocked.push(new LockedCakepop(width / 2 + 350, height / 2, 450, 700, images["UnlockedCakepop"]));
   unlocked.push(new LockedCupcake(width / 2 + 350, height / 2, 500, 700, images["UnlockedCupcake"]));
   unlocked.push(new LockedDonut(width / 2 + 350, height / 2, 500, 700, images["UnlockedDonut"]));
@@ -336,7 +339,6 @@ function mouseClicked(event) {
   if (!button.visible) {
     if (spatula.collide(mouseX, mouseY)) {
       reset = false;
-
       clickers.splice(0, 2);
       if (clickers[0] == undefined) {
         clickers.push(new FridgeTop(width / 2 + 623, height / 2 - 229, 400, 250, images["fridgetop"]));
@@ -381,7 +383,7 @@ function mouseClicked(event) {
         food = true;
       }
       //muffin
-      if (eggs && butter && flour && milk && sugar && icing && cherry && sprinkles && !blueberries && !chocochips && !cocoa && !jam && !fish && !flower) {
+      if (eggs && butter && flour && milk && sugar && icing && cherries && sprinkles && !blueberries && !chocochips && !cocoa && !jam && !fish && !flower) {
         goodies[3].visible = true;
         button.visible = true;
         if (!muffin) {
@@ -399,7 +401,7 @@ function mouseClicked(event) {
         if (!oreos) {
           oreos = true;
           news.visible = true;
-        } else if (oreo && !news.visible) {
+        } else if (oreos && !news.visible) {
           old.visible = true;
         }
         food = true;
@@ -415,7 +417,6 @@ function mouseClicked(event) {
           old.visible = true;
         }
         food = true;
-        console.log(cracker);
       }
       //catnip
       if (flower && !blueberries && !butter && !cherries && !chocochips && !cocoa && !eggs && !fish && !flour && !icing && !jam && !milk && !sprinkles && !sugar) {
@@ -451,7 +452,6 @@ function mouseClicked(event) {
     let x = cordinatesx[i];
     let y = cordinatesy[i];
     if (spatula.collide(mouseX, mouseY)) {
-      reset = false;
       ingredients[j].visible = true;
       drawings.splice(0, 10);
       i = 0;
