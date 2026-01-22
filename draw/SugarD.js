@@ -1,0 +1,2 @@
+class SugarD extends Drawings {
+}

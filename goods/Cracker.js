@@ -1,0 +1,2 @@
+class Cracker extends Goods {
+}

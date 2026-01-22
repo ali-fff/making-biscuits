@@ -1,0 +1,2 @@
+class CherriesD extends Drawings {
+}

@@ -1,0 +1,2 @@
+class Butter extends Ingredients {
+}

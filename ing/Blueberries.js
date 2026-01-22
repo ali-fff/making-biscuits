@@ -1,0 +1,2 @@
+class Blueberries extends Ingredients {
+}

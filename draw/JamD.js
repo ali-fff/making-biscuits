@@ -1,0 +1,2 @@
+class JamD extends Drawings {
+}

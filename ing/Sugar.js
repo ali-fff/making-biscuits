@@ -1,0 +1,2 @@
+class Sugar extends Ingredients {
+}

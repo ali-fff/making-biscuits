@@ -1,0 +1,2 @@
+class Cocoapowder extends Ingredients {
+}

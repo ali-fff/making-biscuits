@@ -1,0 +1,2 @@
+class Catnip extends Goods {
+}

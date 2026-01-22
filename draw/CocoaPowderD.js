@@ -1,0 +1,2 @@
+class CocoaPowderD extends Drawings {
+}

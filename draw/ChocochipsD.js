@@ -1,0 +1,2 @@
+class ChocochipsD extends Drawings {
+}

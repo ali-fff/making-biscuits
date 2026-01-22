@@ -1,0 +1,2 @@
+class Eggs extends Ingredients {
+}

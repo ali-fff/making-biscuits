@@ -1,0 +1,2 @@
+class Oreo extends Goods {
+}

@@ -1,0 +1,2 @@
+class Donut extends Goods {
+}

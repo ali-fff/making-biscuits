@@ -1,0 +1,2 @@
+class Sprinkles extends Ingredients {
+}

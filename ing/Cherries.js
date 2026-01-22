@@ -1,0 +1,2 @@
+class Cherries extends Ingredients {
+}

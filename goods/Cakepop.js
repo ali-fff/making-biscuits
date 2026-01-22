@@ -1,0 +1,2 @@
+class Cakepop extends Goods {
+}

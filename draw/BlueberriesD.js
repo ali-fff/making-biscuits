@@ -1,0 +1,2 @@
+class BlueberriesD extends Drawings {
+}

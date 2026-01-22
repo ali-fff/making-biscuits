@@ -1,0 +1,2 @@
+class MilkD extends Drawings {
+}

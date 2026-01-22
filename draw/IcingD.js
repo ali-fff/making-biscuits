@@ -1,0 +1,2 @@
+class IcingD extends Drawings {
+}

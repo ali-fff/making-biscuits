@@ -1,0 +1,2 @@
+class EggsD extends Drawings {
+}
