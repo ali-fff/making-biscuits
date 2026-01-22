@@ -1,0 +1,2 @@
+class Table extends Objectify {
+}

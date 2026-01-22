@@ -1,0 +1,3 @@
+class LockCakepop extends Lock {
+    
+}

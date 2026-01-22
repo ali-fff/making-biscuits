@@ -1,0 +1,2 @@
+class FridgeTop extends Clicker {
+}

@@ -1,0 +1,3 @@
+class LockOreo extends Lock {
+    
+}

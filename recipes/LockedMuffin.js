@@ -1,0 +1,3 @@
+class LockedMuffin extends Locked {
+    
+}

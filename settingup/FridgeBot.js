@@ -1,0 +1,2 @@
+class FridgeBot extends Clicker {
+}

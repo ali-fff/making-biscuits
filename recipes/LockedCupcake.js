@@ -1,0 +1,3 @@
+class LockedCupcake extends Locked {
+    
+}

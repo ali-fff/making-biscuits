@@ -1,0 +1,3 @@
+class LockMuffin extends Lock {
+    
+}

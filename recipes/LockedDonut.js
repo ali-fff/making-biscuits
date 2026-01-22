@@ -1,0 +1,3 @@
+class LockedDonut extends Locked {
+    
+}
